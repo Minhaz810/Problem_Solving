@@ -1,15 +1,8 @@
-n = int(input())
-li = []
-for i in range(n):
-    k = int(input())
-    inp = list(map(int,input().split()))
-    
-    inp = sorted(inp)
+s = "aabc"
+i = 1
+while(i<len(s)):
+    if s[i] == s[i-1]:
+        break
+    i+=1
 
-    if k == 1:
-        li.append(inp[0])
-    else:
-        li.append(inp[k//2])
-
-for i in li:
-    print(i)
+print(i)
