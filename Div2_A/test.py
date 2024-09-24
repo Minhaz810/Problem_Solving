@@ -1,8 +1,4 @@
-s = "aabc"
-i = 1
-while(i<len(s)):
-    if s[i] == s[i-1]:
-        break
-    i+=1
-
-print(i)
+s = "aadbc"
+s =sorted(s)
+s2= "".join(s)
+print(s2)
